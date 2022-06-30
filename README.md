@@ -13,9 +13,7 @@ Scripts were written with Python 3.9.7, and the only external package requiremne
 
 3. Open ChimeraX. From Finder, drag `2-DRAG-TO-ChimeraX_hbondsPlus_measure.cxc` into the ChimeraX window. It should automatically register the hbPlus command, open each structure in the pdbs folder, and measure the H-bonds.
 
-4. From Terminal, run `python 3-Convert_reports.py`
-
-The end result is a `.csv` file detailing H-bonds between each protein-ligand in the strucutres provided.  
+4. From Terminal, run `python 3-Convert_reports.py`. The end result is `.csv` files in directory `hbond_reports_csv/` detailing H-bonds between each protein-ligand in the strucutres provided.  
 
 *Note that only ligand docking files from GOLD will likely work the way this is set up. How the ligand is encoded in the .pdb files might not be consistent with other software. I have not tested this with more than one ligand per protein, but it should just do the calculation for all available ligands in a session.*  
 
